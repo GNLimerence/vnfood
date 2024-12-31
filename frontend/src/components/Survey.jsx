@@ -40,12 +40,12 @@ const Survey = ({ onPreferencesSaved }) => {
           value={preferences.tastes}
           onChange={(e) => handleChange("tastes", e.target.value)}
         >
-          <MenuItem value="sweetness">甘い</MenuItem>
-          <MenuItem value="sourness">酸っぱい</MenuItem>
-          <MenuItem value="saltiness">塩辛い</MenuItem>
-          <MenuItem value="bitterness">苦い</MenuItem>
-          <MenuItem value="savoriness">旨味</MenuItem>
-          <MenuItem value="spicy">辛い</MenuItem>
+          <MenuItem value="甘い">甘い</MenuItem>
+          <MenuItem value="酸っぱい">酸っぱい</MenuItem>
+          <MenuItem value="塩辛い">塩辛い</MenuItem>
+          <MenuItem value="苦い">苦い</MenuItem>
+          <MenuItem value="旨味">旨味</MenuItem>
+          <MenuItem value="辛い">辛い</MenuItem>
         </Select>
       </FormControl>
 
@@ -56,9 +56,9 @@ const Survey = ({ onPreferencesSaved }) => {
           value={preferences.regions}
           onChange={(e) => handleChange("regions", e.target.value)}
         >
-          <MenuItem value="north">北部</MenuItem>
-          <MenuItem value="mid">中央部</MenuItem>
-          <MenuItem value="south">南部</MenuItem>
+          <MenuItem value="北部">北部</MenuItem>
+          <MenuItem value="中央部">中央部</MenuItem>
+          <MenuItem value="南部">南部</MenuItem>
         </Select>
       </FormControl>
 
@@ -68,10 +68,10 @@ const Survey = ({ onPreferencesSaved }) => {
           value={preferences.foodType}
           onChange={(e) => handleChange("foodType", e.target.value)}
         >
-          <MenuItem value="noodles">麺類</MenuItem>
-          <MenuItem value="rice">ご飯</MenuItem>
-          <MenuItem value="banhmi">バインミー</MenuItem>
-          <MenuItem value="other">その他</MenuItem>
+          <MenuItem value="麺類">麺類</MenuItem>
+          <MenuItem value="ご飯">ご飯</MenuItem>
+          <MenuItem value="バインミー">バインミー</MenuItem>
+          <MenuItem value="その他">その他</MenuItem>
         </Select>
       </FormControl>
 
@@ -82,9 +82,9 @@ const Survey = ({ onPreferencesSaved }) => {
           value={preferences.excludedSpices}
           onChange={(e) => handleChange("excludedSpices", e.target.value)}
         >
-          <MenuItem value="pepper">胡椒</MenuItem>
-          <MenuItem value="salt">塩</MenuItem>
-          <MenuItem value="chili">唐辛子</MenuItem>
+          <MenuItem value="胡椒">胡椒</MenuItem>
+          <MenuItem value="塩">塩</MenuItem>
+          <MenuItem value="唐辛子">唐辛子</MenuItem>
         </Select>
       </FormControl>
 

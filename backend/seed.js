@@ -136,10 +136,13 @@ const sampleFoods = [
 async function seedDatabase() {
   try {
     // Kết nối đến MongoDB
-    await mongoose.connect("mongodb://localhost:27017/vnfood", {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    await mongoose.connect(
+      "mongodb+srv://phamhoanghainam203:Daihocbachkhoahanoi23102003@cluster0.rxlgp.mongodb.net/vnfood",
+      {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+      }
+    );
 
     // Xóa dữ liệu cũ (nếu cần)
     await Food.deleteMany({});

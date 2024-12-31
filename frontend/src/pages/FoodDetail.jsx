@@ -75,7 +75,11 @@ const FoodDetail = () => {
     // 新しいコメントをリストに追加
     const updatedComments = [
       ...food.comments,
-      { username: "User", comment: newComment, date: new Date().toISOString() },
+      {
+        username: "Admin",
+        comment: newComment,
+        date: new Date().toISOString(),
+      },
     ];
     setFood({ ...food, comments: updatedComments });
     setNewComment(""); // コメント追加後に入力をクリア
